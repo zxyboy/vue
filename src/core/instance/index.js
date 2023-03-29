@@ -13,8 +13,9 @@ function Vue (options) {
   }
   this._init(options)
 }
-
+// 初始化Vue原型方法：__init, 内部包含声明周期函数
 initMixin(Vue)
+//
 stateMixin(Vue)
 eventsMixin(Vue)
 lifecycleMixin(Vue)
